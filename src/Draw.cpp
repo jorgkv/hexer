@@ -111,7 +111,7 @@ void Draw::drawPoint(hexer::Point p)
 {
 #ifdef HEXER_HAVE_CAIRO    
     p -= m_grid_p->origin();
-    cairo_arc(m_cairo_p, p.m_x, p.m_y, 1.0, 0.0, 2 * M_PI);
+    cairo_arc(m_cairo_p, p.m_x, p.m_y, 1.0, 0.0, 2 * 3.14159265358979323846264338327);
     cairo_stroke(m_cairo_p);
 #endif
 }
